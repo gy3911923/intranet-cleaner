@@ -103,6 +103,8 @@ tests/                  三套回归测试
 | `search_max_results` | 单关键词结果上限（默认 3000） |
 | `search_engine` | 检索默认引擎：`everything` / `anytxt` |
 | `auto_kill_browser` | 浏览器清理时自动结束占用进程 |
+| `auto_elevate` | 启动时非管理员自动请求提权重启（UAC 一次）；`false` 关闭 |
+| `feedback_mail` | 「关于与反馈」弹窗展示的反馈邮箱列表（默认空；此文件不入库，个性化配置随包分发） |
 | `log_max_lines` | 日志行数上限 |
 
 > **敏感提示**：`search_keywords` 可能包含人名、单位名等敏感词汇。该文件**不随程序打包**（exe 内不含任何关键词），请与 exe 分开保管、按需分发，切勿提交到版本库（已在 `.gitignore` 中排除）。
