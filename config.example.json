@@ -1,0 +1,12 @@
+{
+  "remove_keywords": [],
+  "search_keywords": [],
+  "download_dirs": [
+    "%USERPROFILE%\\Downloads"
+  ],
+  "search_max_results": 3000,
+  "search_engine": "everything",
+  "auto_kill_browser": true,
+  "log_max_lines": 2000,
+  "feedback_mail": []
+}

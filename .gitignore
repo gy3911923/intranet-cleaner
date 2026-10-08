@@ -1,0 +1,47 @@
+# ---- 虚拟环境 / 构建产物 ----
+.venv/
+build/
+dist/
+*.spec
+
+# ---- Win7 兼容版（Python 3.8 环境 / 构建产物 / 安装器缓存）----
+.py38/
+build_win7/
+dist_win7/
+_py38_setup/
+
+# ---- 第三方工具（构建时自备，不随仓库分发）----
+tools/
+
+# ---- 敏感配置：含真实检索词表（人名等），严禁入库 ----
+config.json
+app/config.json
+
+# ---- 配置与词表隔离（含全部衍生备份/损坏快照）----
+config.json.bak
+config.json.bak.*
+config.json.pre_restore
+config.json.corrupt
+config.json.tmp
+
+# ---- 运行痕迹 ----
+操作日志.log
+*.log
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+
+# ---- 随包分发的第三方安装包（体积大，单独分发）----
+Anytxt_*.exe
+
+# ---- 工作区内部数据（不入公开仓库）----
+.workbuddy/
